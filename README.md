@@ -1,5 +1,3 @@
-# RxJavaNetworkCall
-
 <h1>Network API request Using Rxjava android tutorial Beginner</h1>
 Checkout the previous post <a href="http://thoughtnerds.com/reactive-hello-world-application-android/">http://thoughtnerds.com/reactive-hello-world-application-android/</a>
 
@@ -201,7 +199,7 @@ For Maven, you can add RxJava via the following snippet.
 4)After Creating function subscribe the Observable from OnCreate
 <pre>getDataFromServer().subscribeOn(Schedulers.<span>newThread</span>())
         .observeOn(AndroidSchedulers.<span>mainThread</span>())
-        .subscribe(networkCallObserver)<span>;
+        .subscribe(networkCallObserver)<span>;</pre>
 
 Thus we can get response in <strong>OnNext</strong> in the </span><strong>networkCallObserver</strong> and set data to a textView
 
